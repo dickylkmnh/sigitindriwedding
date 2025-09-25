@@ -1,10 +1,9 @@
 "use client";
 
 import AOS from "aos";
-import { useEffect } from "react";
+import { use, useEffect } from "react";
 import { Sacramento } from "next/font/google";
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
 
 const sacramento = Sacramento({
   subsets: ["latin"],
@@ -12,9 +11,13 @@ const sacramento = Sacramento({
   variable: "--font-sacramento",
 });
 
-export default function Home() {
-  const searchParams = useSearchParams();
-  const name = searchParams.get("name");
+export default function Home({
+  searchParams,
+}: {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+}) {
+  const params = use(searchParams);
+  const name = params?.name ?? "Tamu Undangan";
 
   useEffect(() => {
     AOS.init();
@@ -40,25 +43,21 @@ export default function Home() {
           alt="Bunga Kiri Atas"
           className="absolute top-0 left-0 w-32 md:w-48 opacity-80 scale-x-[-1] scale-y-[-1]"
         />
-
         <img
           src="/img/bingkai.png"
           alt="Bunga Kanan Atas"
           className="absolute top-0 right-0 w-32 md:w-48 opacity-80 scale-y-[-1]"
         />
-
         <img
           src="/img/bingkai.png"
           alt="Bunga Kiri Bawah"
           className="absolute bottom-0 left-0 w-32 md:w-48 opacity-80 scale-x-[-1]"
         />
-
         <img
           src="/img/bingkai.png"
           alt="Bunga Kanan Bawah"
           className="absolute bottom-0 right-0 w-32 md:w-48 opacity-80"
         />
-
 
         {/* Content */}
         <div
@@ -70,11 +69,19 @@ export default function Home() {
           <div className="space-y-2">
             <div className="text-lg text-[#FAF8F5] mb-4">The Wedding</div>
 
-            <div className={`text-5xl md:text-6xl font-bold text-[#D4AF37] ${sacramento.className}`}>
+            <div
+              className={`text-5xl md:text-6xl font-bold text-[#D4AF37] ${sacramento.className}`}
+            >
               Sigit Komarudin
             </div>
-            <div className={`text-[#FAF8F5] text-2xl ${sacramento.className}`}>&</div>
-            <div className={`text-5xl md:text-6xl font-bold text-[#D4AF37] ${sacramento.className}`}>
+            <div
+              className={`text-[#FAF8F5] text-2xl ${sacramento.className}`}
+            >
+              &
+            </div>
+            <div
+              className={`text-5xl md:text-6xl font-bold text-[#D4AF37] ${sacramento.className}`}
+            >
               Indri Ismawati
             </div>
 
