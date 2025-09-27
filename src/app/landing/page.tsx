@@ -414,6 +414,44 @@ export default function Landing() {
                 </span>
               )}
             </div>
+
+            {/* Card 3 */}
+            <div
+              className="p-6 bg-[#f8f8f84b] rounded-xl shadow hover:shadow-lg transition relative"
+              data-aos="fade-up"
+            >
+              <div className="flex items-center justify-between">
+                <div>
+                  <h4 className="text-lg font-semibold text-[#1c1c1c]">
+                    INDRI ISMAWATI
+                  </h4>
+                  <p className="text-sm text-[#1c1c1c]">Bank Mandiri</p>
+                </div>
+                <img
+                  src="/img/mandiri.png"
+                  alt="Logo Mandiri"
+                  className="h-10 w-auto"
+                />
+              </div>
+
+              <div className="mt-12 flex items-center justify-between gap-2">
+                <p className="select-all font-mono text-md text-[#1c1c1c]">
+                  1820010438265
+                </p>
+                <button
+                  onClick={() => copyText("mandiri", "1820010438265")}
+                  className="ml-2 px-3 py-2 bg-[#D4AF37] hover:bg-[#E6BE8A] rounded-md font-semibold text-[#1c1c1c]"
+                >
+                  Salin
+                </button>
+              </div>
+
+              {copied === "mandiri" && (
+                <span className="absolute top-4 right-4 bg-[#1c1c1c] text-white text-xs px-2 py-1 rounded">
+                  Tersalin!
+                </span>
+              )}
+            </div>
           </div>
 
           <p className="text-xs text-center text-[#FAF8F5] mt-4">
