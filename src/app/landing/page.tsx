@@ -231,9 +231,57 @@ export default function Landing() {
         </div>
       </section>
 
+      {/* TURUT MENGUNDANG */}
+      <section id="turut_mengundang" className="pt-20">
+        <div className="max-w-5xl mx-auto px-4">
+          <div
+            className="text-center mb-10"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          >
+            <h3
+              className={`text-4xl md:text-5xl font-bold text-[#D4AF37] ${sacramento.className}`}
+            >
+              Turut Mengundang
+            </h3>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Card 1 */}
+            <div
+              className="p-6 bg-[#f8f8f84b] rounded-xl shadow hover:shadow-lg transition"
+              data-aos="fade-right"
+            >
+              <p className="text-center font-semibold text-[#1c1c1c]">
+                Keluarga Besar Bapak Sudirman
+              </p>
+              <p className="text-center text-[#1c1c1c]">&</p>
+              <p className="text-center font-semibold text-[#1c1c1c]">
+                Keluarga Besar Ibu Komalasari
+              </p>
+            </div>
+
+            {/* Card 2 */}
+            <div
+              className="p-6 bg-[#f8f8f84b] rounded-xl shadow hover:shadow-lg transition"
+              data-aos="fade-left"
+            >
+              <p className="text-center font-semibold text-[#1c1c1c]">
+                Keluarga Besar Alm. Bapak Harun Karyana
+              </p>
+              <p className="text-center text-[#1c1c1c]">&</p>
+              <p className="text-center font-semibold text-[#1c1c1c]">
+                Keluarga Besar Ibu Cucum Sumiati
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
       {/* GALLERY */}
       <section id="gallery" className="pt-20">
-        <div className="max-w-6xl mx-auto px-4">
+        <div className="max-w-xl1 mx-auto px-4">
           <div
             className="text-center mb-10"
             data-aos="zoom-in"
@@ -247,7 +295,7 @@ export default function Landing() {
             </h3>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="flex justify-center">
             {/* Foto 1 */}
             <div
               className="overflow-hidden rounded-xl shadow hover:scale-105 transition"
@@ -256,67 +304,7 @@ export default function Landing() {
               <img
                 src="/img/berdua.png"
                 alt="Gallery 1"
-                className="w-full h-48 object-cover"
-              />
-            </div>
-
-            {/* Foto 2 */}
-            <div
-              className="overflow-hidden rounded-xl shadow hover:scale-105 transition"
-              data-aos="fade-up"
-            >
-              <img
-                src="/img/galery1.jpeg"
-                alt="Gallery 2"
-                className="w-full h-48 object-cover"
-              />
-            </div>
-
-            {/* Foto 3 */}
-            <div
-              className="overflow-hidden rounded-xl shadow hover:scale-105 transition"
-              data-aos="fade-up"
-            >
-              <img
-                src="/img/galery2.jpeg"
-                alt="Gallery 3"
-                className="w-full h-48 object-cover"
-              />
-            </div>
-
-            {/* Foto 4 */}
-            <div
-              className="overflow-hidden rounded-xl shadow hover:scale-105 transition"
-              data-aos="fade-up"
-            >
-              <img
-                src="/img/galery3.jpeg"
-                alt="Gallery 4"
-                className="w-full h-48 object-cover"
-              />
-            </div>
-
-            {/* Foto 5 */}
-            <div
-              className="overflow-hidden rounded-xl shadow hover:scale-105 transition"
-              data-aos="fade-up"
-            >
-              <img
-                src="/img/galery4.jpeg"
-                alt="Gallery 4"
-                className="w-full h-48 object-cover"
-              />
-            </div>
-
-            {/* Foto 6 */}
-            <div
-              className="overflow-hidden rounded-xl shadow hover:scale-105 transition"
-              data-aos="fade-up"
-            >
-              <img
-                src="/img/galery5.jpeg"
-                alt="Gallery 5"
-                className="w-full h-48 object-cover"
+                className="w-[600px] md:w-[800px] h-auto object-cover"
               />
             </div>
           </div>
