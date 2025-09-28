@@ -357,14 +357,14 @@ export default function Landing() {
                   1320028535939
                 </p>
                 <button
-                  onClick={() => copyText("mandiri", "1320028535939")}
+                  onClick={() => copyText("mandiri1", "1320028535939")}
                   className="ml-2 px-3 py-2 bg-[#D4AF37] hover:bg-[#E6BE8A] rounded-md font-semibold text-[#1c1c1c]"
                 >
                   Salin
                 </button>
               </div>
 
-              {copied === "mandiri" && (
+              {copied === "mandiri1" && (
                 <span className="absolute top-4 right-4 bg-[#1c1c1c] text-white text-xs px-2 py-1 rounded">
                   Tersalin!
                 </span>
@@ -427,14 +427,14 @@ export default function Landing() {
                   1820010438265
                 </p>
                 <button
-                  onClick={() => copyText("mandiri", "1820010438265")}
+                  onClick={() => copyText("mandiri2", "1820010438265")}
                   className="ml-2 px-3 py-2 bg-[#D4AF37] hover:bg-[#E6BE8A] rounded-md font-semibold text-[#1c1c1c]"
                 >
                   Salin
                 </button>
               </div>
 
-              {copied === "mandiri" && (
+              {copied === "mandiri2" && (
                 <span className="absolute top-4 right-4 bg-[#1c1c1c] text-white text-xs px-2 py-1 rounded">
                   Tersalin!
                 </span>
